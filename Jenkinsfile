@@ -49,7 +49,7 @@ BRANCH_NAME=sh(script:"echo $GIT_BRANCH|sed -e 's|origin/||g'",returnStdout:true
   while(build!=null && build.result !='SUCCESS')
   build=build.previousBuild
 }
-    if (build==null)
+    if(build == null)
     {
       //this means there has not been a success fill build yet
       PREVIOUS_BUILD_VERSION='none'
