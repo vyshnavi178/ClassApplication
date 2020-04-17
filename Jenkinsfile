@@ -74,7 +74,7 @@ BRANCH_NAME=sh(script:"echo $GIT_BRANCH|sed -e 's|origin/||g'",returnStdout:true
             sh """mvn versions: set -DnewVersion=${BUILD_VERSION}-SNAPSHOT -B """
           }
         }
-        }
+        
 stage ('build') {
 
 steps {	  
