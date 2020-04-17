@@ -5,6 +5,7 @@
 	<groupId>Spring3HibernateApp</groupId>
 	<artifactId>Spring3HibernateApp</artifactId>
 	<packaging>war</packaging>
+	<version>2020.04.1-SNAPSHOT</version>
 
 	<scm>
 		<developerConnection>
