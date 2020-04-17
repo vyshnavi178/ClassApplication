@@ -46,7 +46,7 @@ BRANCH_NAME=sh(script:"echo $GIT_BRANCH|sed -e 's|origin/||g'",returnStdout:true
   GIT_SIMPLE=sh([script: "git rev-list ${GIT_COMMIT} |head -n 1 |cut -c 1-5",returnStdout:true]).trim()
   //get latest successful build name
   build =currentBuild
-  while(build != null && build.result !='SUCCESS')
+  while(build != null && build.result != 'SUCCESS')
   build=build.previousBuild
 }
     if(build == null)
