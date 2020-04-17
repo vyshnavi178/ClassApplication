@@ -71,7 +71,7 @@ stage ('build') {
 
 steps {	  
 sh 'echo "compile the project"'
-sh ''' mvn compile '''
+sh ''' mvn install '''
 }		
 }
 }
