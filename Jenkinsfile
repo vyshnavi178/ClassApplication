@@ -27,9 +27,5 @@ sh ''' mvn compile '''
 }		
 }
 }
-post {
-always {
-	echo “Pipeline finished”
-}
-}
+
 }
