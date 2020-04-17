@@ -64,16 +64,7 @@ BRANCH_NAME=sh(script:"echo $GIT_BRANCH|sed -e 's|origin/||g'",returnStdout:true
   }
 }
 }
-	stage('pre-build")
-        {
-          steps
-          {
-            //set build version for projcet componet 
-            sh 'echo "Updating pom version"'
-  
-            sh """mvn versions: set -DnewVersion=${BUILD_VERSION}-SNAPSHOT -B """
-          }
-        }
+	
         
 stage ('build') {
 
