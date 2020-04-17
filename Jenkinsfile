@@ -74,5 +74,12 @@ sh 'echo "compile the project"'
 sh ''' mvn install '''
 }		
 }
+	stage ('publish') {
+
+steps {	  
+sh 'echo "compile the project"'
+sh ''' mvn deploy '''
+}		
+}
 }
 }
