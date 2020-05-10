@@ -65,25 +65,25 @@ BRANCH_NAME=sh(script:"echo $GIT_BRANCH|sed -e 's|origin/||g'",returnStdout:true
   }
 }
 }
-stage ('GENerate report') {
+stage ('vaildate the project') {
 
 steps {	  
-sh 'echo "compile the project"'
-sh ''' mvn clean sonar:sonar '''
+sh 'echo "validate the project"'
+sh ''' mvn validate '''
 }		
 }	
         
 stage ('build') {
 
 steps {	  
-sh 'echo "compile the project"'
+sh 'echo "build  the project"'
 sh ''' mvn install '''
 }		
 }
 	stage ('publish') {
 
 steps {	  
-sh 'echo "compile the project"'
+sh 'echo "deploy the project"'
 sh ''' mvn deploy '''
 }		
 }
