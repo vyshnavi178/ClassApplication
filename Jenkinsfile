@@ -16,7 +16,7 @@ timestamps()
 }
 tools
 {
-maven 'Maven-3.5.4'
+maven 'maven'
 }
 stages {
 	stage('setup')
