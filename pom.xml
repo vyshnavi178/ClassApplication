@@ -467,5 +467,5 @@ http://54.159.248.248:9000
 </sonar.host.url>
 </properties>
 </profile>
-</profiles/>
+</profiles>
 </project>
