@@ -7,6 +7,3 @@ CMD ["catalina.sh","run"]
 
 
 
-
-
-
